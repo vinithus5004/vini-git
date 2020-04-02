@@ -1,0 +1,55 @@
+Configuração nome de usuário e email:
+	-git config --global user.name "nome de usuario"
+	-git config --global user.email "email do usuario"
+
+(opcional)*Obs:cirar arquivo .gitignore e colocar nele o nome dos arquivos(também o próprio) que o git deve ignorar.
+
+Comandos no Git:
+	01-git init -> cria um repositório na pasta/localização atual.
+	02-git status -> mostra o estado atual do seu repositório.
+	03-git add <file> -> adiciona um arquivo na área intermediária ex: README.txt
+	04-git add . -> adiciona na área intermediário todos os arquivos que estiverem no local.
+	05-git add *.txt -> adiciona na área intermediária todos os arquivos com terminação txt.
+	06-git commit -m "MensagemDeTexto" -> confirmará os arquivos adicionados à area intermediária, os enviando
+					   para o repositório.
+	07-git commit -a -m "MensagemDeTexto" -> irá commitar diretamente pulando a etapa intermediária.
+	08-git diff -> mostra as alterçoes feitas no diretório de trabalho.
+	09-git diff --staged -> mostra as alteraçoes feitas na staging area (área intermediária).
+	10-git log -> fornece o histórico de commits.
+	11-git log -p -> além de mostrar o hitórico de commits, também mostra o diff de cada um.(Clique em enter para 		      			 continuar paginando até aparecer END , então clique em q)
+	12-git log -p -n -> n é o número de commits que vc deseja ver, no caso os n últimos commits.
+	13-git log --pretty=oneline -> mostra apenas a chave e o nome dos commits
+	14-git commit --amend -m "Msg" -> edita o último commit.
+	15-gitk -> parte gráfica do git
+	16-git reset HEAD <file> -> remove determinado arquivo da staging area.
+	17-git checkout -- <file> -> descarta as mudanças feitas no diretório de trabalho.
+	18-rm <file> -> remove o arquivo do repositório.
+	19-git tag -> listar as tags(etiquetas para o controle de versão) no sistemas.
+	20-git tag -a v1.0 -m "versão 1.0" -> cria uma tag.(v1.0 e a msg de texto são apenas um exemplo).
+	21-git show (nome da tag) -> mostra mais detalhes sobre a tag.
+	22-git tag -a (nome versão) (chave do commit) -m "msgTexto".
+	23-git checkout (nome da versão)-> troca a versão do sistema para a determinada tag.
+	24-git tag -d (nome da versão) -> deleta a tag.
+	25-git branch teste -> cria um branch de teste (o nome teste é só um exemplo, poderia ter outro nome).
+	26-git checkout teste -> faz a transição do branch master para o branch teste.
+	27-git checkout -b teste -> executa a transição de branch de forma direta, pulando os dois passos acima.
+	28-git merge teste -> traz o que está na branch teste para a branch master.
+	29-git branch -d teste -> deleta o branch teste.
+	30-git branch -> lista todos os branches existentes no repositório.
+
+Github com o Git:
+	01-ssh-keygen -> permitir acesso ao github através da máquina local.
+	02-git clone (código do arquivo a ser clonado) -> clonar arquivo que está no repositório do github 
+	   para trabalhar com ele no repositório local.	
+	03-git clone (código do arquivo a ser clonado) (nome da pasta) ->
+	04-git push origin master -> envia os arquivos do repositório local para o repositório do github.
+	05-git pull origin master -> atualiza os arquivos do local atual com os do local mais atualizado.
+
+****para colaborar no github, devemos fazer um forked do projeto original e depois que trabalharmos nesse forked
+    iremos mandar um pull request para que o autor original do projeto escolha aceitar ou não suas alterações.
+    (O forked é uma bifurcação do projeto original)
+    (Se o autor aceitar sua colaboração ele fará um merge para mesclar suas alterações com o projeto dele).
+	
+	
+	 
+	
