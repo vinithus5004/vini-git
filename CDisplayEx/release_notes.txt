@@ -1,0 +1,373 @@
+1.10.33
+
++ Fixed bug when opening a folder, Previous/Next File was not working.
+
+1.10.32
+
++ Fixed double-page problem on some mangas
++ Fixed bug when trying to load next/previous file and the folder is empty.
++ Fixed gesture direction with japanese mode.
+
+1.10.31
+
++ Fixed: crash when loading application.
++ Fixed: Folders was not added to history.
++ Webp library updated to version 5.0
++ 7zip library updated to latest version.
+- Removed unecessary rar5 library.
++ Fixed various crashs related to cache.
+
+
+1.10.30
+
++ Faster and more accurate zoom.
++ Set bookmark name.
++ various options for showing on-screen informations.
++ Fixed Access Violation errors (mainly caused by broken sqlite database).
+  Configuration is now stored in the registry.
++ Fixed Num pad shortcuts.
++ Fixed DoubleClick event in Japanese mode.
++ Fixed Automatic color correction in Double page mode.
++ Fixed next file loading with PDF.
++ Fixed magnifier with image edges.
++ Ukrainian translation.
++ Greek translation.
++ Bengali translation.
++ Updated German translation
+
+1.10.29
+
++ Vibrance color correction.
++ PDF: Fixed some incompatibilities with various file formats.
++ PDF: Fixed Anti-Aliased Fonts.
++ Updated Webp v4.1.
++ translation: Vietnamese .
+
+1.10.28
+
++ Improved Automatic color correction (White balance and sensitivity).
++ RGB Gamma adjustment.
+
+1.10.27
+
++ Fix keyboard key bind error (Introduced in previous release).
+
+1.10.26
+
++ Fix PDF support, crash and blur image on both win32 and win64.
+
+1.10.25
+
++ Prevent possible corruption of configuration file.
+
+1.10.24
+
++ HotFix: Application can hang when fast flipping.
+
+1.10.23
+
++ Fix a scrolling effect when opening book.
+
+1.10.22
+
++ Hotfix: Crash when clearing history.
+
+1.10.21
+
+ + Fix skipping page when fast flipping.
+ + Portuguese translation.
+ + Reduced installer file size.
+
+1.10.20
+
++ WebP is now working again in the shell extension.
+
+1.10.19
+
++ Totally rewritten shell extension, faster and better image quality.
++ Fix explorer crash when calculating thumbnails on Windows 8.1.
+  This was mainly caused by the webp library (removed from the shell extension for now).
++ Fixed "next volume" action, when archive is emty.
++ Updated unrar libraries.
++ Intaller: added an "Uninstallable" option (mainly for portable app).
+
+1.10.18
+
++ Fix Shell Extension, it was not calculating thumbnails in certain situations.
++ Improved shell Extension to display cover from compressed archives (zip, rar, 7z)
+  not activated by default.
++ Improved shell Extension to display WebP images.
+  not activated by default.
++ Fixed rare bug when reading comic from CDROM.
+
+1.10.17
+
++ Fit to screen mode is now configurable.
++ Improved Russian translation.
++ Fixed Japanese mode: keep keyboard mapping.
++ Fixed keyboard shortcut helper for "TAB" support.
++ Fixed invisible window when second monitor is not plugged.
++ Many cosmetic improvements.
++ Default scroll attempts before changing page is now set to 0.
+
+1.10.16
+
++ Fix image quality on the first page when opening a cbz with lanczos.
+
+1.10.15
+
++ Improved Animated Gifs support.
++ Fix rare bug on CB7 files.
++ Fix rare bug on black image and automatic color correction tool.
+
+1.10.14
+
++ Hotfix: Can't read pdf.
+
+1.10.13
+
++ Support of animated GIF
++ Support of animated WebP
++ Automatically resume file (option).
++ Fixed a bug preventing thumbnail to be displayed.
++ Fixed a bug on Windows XP, help menu was hidden.
++ Disable automatic color correction on thumbnails.
++ Disable window size limit.
+
+1.10.12
+
++ Page caching size is now configurable.
++ Page caching is activated by default.
++ Improved German translation.
++ Fix a bug in double page mode and "last page" action.
+
+1.10.11
+
++ Pages caching option is now using background threads,
+  this prevents unpleasant delays during reading.
+
+1.10.10
+
++ Fix rare bug with Lanczos algorithm on certain images.
++ Updated Hungarian language support.
+
+1.10.9
+
++ Adjust pages height in double page mode.
++ Update Leap Motion libraries.
++ New option to hide the toolbar.
++ Fix: Restore last window position at startup.
++ Fix: Restore fullscreen state on the last screen.
+
+1.10.8
+
++ fix rare bug with Lanczos algorithm on certain images.
+
+1.10.7
+
++ Option: Include archives when loading next file.
++ Option: Folder recursion limit.
++ Double page > Split function.
+
+1.10.6
+
++ Alphabetic sort option.
+
+1.10.5
+
++ fix rare bug when closing application.
++ fix a translation issue.
++ Add a "Small cursor" option (like original CDisplay).
+
+1.10.4
+
++ Page caching option, to calculate next file in background (disabled by default).
++ Lanczos and linear resamplers are now 2 times faster.
++ You can adjust the quality of Lanczos algorithm.
++ Zooming is now faster.
++ Disable the ESC hardcoded key, so you can now decide his behaviour.
++ Fix the bugs regarding the "load next/prev file" action.
++ Hungarian language support.
++ "Check for update" action is back (menu > help).
+
+1.10.3
+
++ Japanese mode improved, all interface is now adapted for right to left reading when this mode is selected.
++ Solvenian language support
++ Fix a bug in the "fit to screen" mode, it was skipping one page when reading.
+
+1.10.2
+
++ fix Windows XP SP3 compatibility
+
+1.10.1
+
++ fix RAR5 encrypted files.
+
+1.10
+
++ Faster JPEG, PNG, GIF images decoding.
++ Support for RAR5 CBR files.
++ Faster RAR decompression.
++ Support for WEBP 0.4 images.
++ Updated translations (DE ES FR IT NL)
++ Fix rare bug when installing Shell Extention on old systems.
++ Fix rare bug displaying some GIF images.
++ Option to clear history when the application closes.
++ Option to hide on-screen informations.
++ Option: Slow scrolling on long key press.
++ The slideshow function scroll down instead of changing page.
++ Remember thumbsbar size.
++ Smaller installer.
+
+1.9.16
+
++ Fix a small bug in configuration editor that prevents changing scroll size.
+
+1.9.15
+
++ A bug introduced in version 1.9.13 that slows down the loading of comic archives has been fixed.
+
+1.9.14
+
++ Option to activate the Leap motion manually.
+
+1.9.13
+
++ Support for the Leap Motion
++ Handle additional mouse buttons to load next file or previous file.
++ Option to automatically load next file once you reach the end of the current file.
++ Loading a folder now also search images in sub folders.
++ Galician language support.
++ Fix some rare bugs.
+
+1.9.12
+
++ fix incorrect page count in some cases.
+
+1.9.11
+
++ fix a bug introduced in previous version, in some comic books all pages are not displayed
+
+1.9.10
+
++ Touch gestures.
++ Bookmarks.
++ Automatic background color option.
++ Number of scrolling attempts before changing page is now configurable.
++ Magnifier size is now configurable.
++ Zoom reset on changing page is now configurable.
++ Forward one page in double page mode is now configurable.
++ Polish language.
++ Configuration file format changed to sqlite.
++ Try to display corrupted jpeg images.
++ Fix pdf print quality.
++ Fit to screen can't be used with zoom option.
++ Cleanup history for deleted files at startup.
+
+v1.9.9
+
++ display images with bad extension
+
+v 1.9.8
+
++ rotate all images
++ fix a crash when reading a comic book created under osx
++ fix a crash when a png file have a wrong jpeg file extension.
+
+v 1.9.7
+
++ Win64: support for pdf reading
+
+v 1.9.6
+
++ Detect landscape pages as double pages.
+
+v 1.9.5
+
++ Use a faster jpeg library for both win32 and win64
+
+v1.9.4
+
++ Scroll size is now configurable.
++ The left an right scrolling actions are configurables.
++ New languages for those countries:
+	- Japan
+	- Czech
+	- Arabic
+	- German
++ Shell extension: fix .webp and .cbt covers.
++ Support Tiff images
+
+v1.9.3
+
++ Fix bugs on keyboard Shortcut config utility.
++ You can now configure keyboard shortcuts for scrolling actions.
++ Simplified double page mode.
++ New languages for those countries:
+	- Nederland
+	- Norway
+	- Danish
+	- Iran
+	- Brazil
+	- China
+
+V1.9.2
+
++ fix some bugs when opening several books.
+
+V1.9
+
++ x64 version
++ Support of WebP image format.
++ Keep zoom level when changing pages.
++ Fix various navigation bugs.
++ Comic Thumbs in windows x64 Explorer
+
+V1.8
+
++ New Swedish, Turkish and Italian languages.
++ Fix history sort order.
++ Fix some scrolling issues.
++ New icons.
++ Option to disable smooth scrolling (for slow computers).
++ Configurable language.
++ Newest 7zip plugin.
+- Disabled shell menu "open with cdisplayex".
++ Added slide bar
++ New install program.
+
+v1.7
+
++ Support for DjVu files.
++ Support for PDF files.
++ Smooth scrolling.
++ New shell context menu (Open with CDisplayEx) for files and folders.
++ New Spanish and Catalan Languages.
++ Progress bar moved to bottom left.
++ New Next and Previous page buttons blended on the display area.
+
+V1.6
+
++ Double page shadow.
++ Zoom.
++ Magnifier.
++ Multilingual (en,fr).
++ 7z: multifile archive handler.
+
+V1.5
+
++ Japanese mode
++ Forward and backward 2 pages option in double-page mode
++ New thumbnail slider.
++ New toolbar that share the same area than main menu.
++ New sevenzip plugin
++ New overlay progress bar.
++ New overlay page number.
++ Fully unicode
++ Reactivated the print function.
++ Improved keyboard scrolling.
++ Added slideshow duration configuration.
++ Save and restore the window state (maximized/minimized/normal).
++ Fixed many bugs
+- Removed unusued ooo file type handling.
