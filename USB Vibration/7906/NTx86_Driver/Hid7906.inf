@@ -1,0 +1,100 @@
+;
+; HID7906.INF  -- This file contains descriptions of usb hid devices
+;
+;*** Created 12/05/07  (linshaozhou)
+;
+
+
+
+[Version]
+Signature=$Windows NT$
+Class=HIDClass
+ClassGuid={745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Provider=%MyMfg%
+DriverVer=12/05/2007,1.0.0.1
+CatalogFile=HID7906.cat
+
+[DestinationDirs]
+DefaultDestDir   = 12 ; DIRID_DRIVERS
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+; Manufacturer Section
+; ---------------------------------------------------------
+[Manufacturer]
+%MyMfg%=MyDevice
+
+[MyDevice]
+%MyDeviceDesc%=HID7906_Inst, USB\VID_0079&PID_0006
+
+[HID7906_Inst.NT]
+Include   = input.INF
+Needs     = HID_Inst.NT
+Copyfiles = HID7906_CopyFiles
+
+
+
+[HID7906_Inst.NT.HW]
+DelReg  = HID7906_Inst.DelReg.NT.HW
+AddReg  = HID7906_Inst.AddReg.NT.HW
+
+[HID7906_Inst.DelReg.NT.HW]
+; remove the selective suspend enable flag in case it is present from a previous install
+HKR,,"SelectiveSuspendEnabled"
+
+[HID7906_Inst.AddReg.NT.HW]
+HKR,,"LowerFilters",0x00010000,"HID7906"
+
+
+[HID7906_Inst.NT.Services]
+Needs      = HID_Inst.NT.Services
+AddService = HID7906,,HID7906_Service_Inst
+
+
+[HID7906_Service_Inst]
+DisplayName    = 	%HID7906.SvcDesc%
+ServiceType    = 	%SERVICE_KERNEL_DRIVER%
+StartType      =	%SERVICE_DEMAND_START%
+ErrorControl   =	%SERVICE_ERROR_NORMAL%
+ServiceBinary  =	%12%\HID7906.sys
+LoadOrderGroup =	extended base
+
+[HID7906_CopyFiles]
+HID7906.sys
+
+; Source Media Section
+; ---------------------------------------------------------
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+HID7906.sys = 1,,
+
+
+; Strings Section
+; ---------------------------------------------------------
+[strings]
+; localizable
+
+MyMfg            =	"Dragon Rise"
+MyDeviceDesc	 =	"HID-Compliant USB Game Controller"
+HID7906.SvcDesc  =	"Dragon Rise HID7906 x86 Driver"
+DiskName         =	"Dragon Rise Game controller Installation Disk"
+
+; non-localizable
+SPSVCINST_TAGTOFRONT  = 0x00000001
+SPSVCINST_ASSOCSERVICE= 0x00000002
+SERVICE_KERNEL_DRIVER = 1
+SERVICE_BOOT_START    = 0
+SERVICE_SYSTEM_START  = 1
+SERVICE_AUTO_START    = 2
+SERVICE_DEMAND_START  = 3
+SERVICE_ERROR_NORMAL  = 1
+SERVICE_ERROR_IGNORE  = 0
+REG_EXPAND_SZ         = 0x00020000
+REG_DWORD             = 0x00010001
+REG_SZ                = 0x00000000
+
+
+

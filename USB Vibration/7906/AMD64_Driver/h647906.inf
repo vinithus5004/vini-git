@@ -1,0 +1,99 @@
+;
+; H647906.INF  -- This file contains descriptions of usb hid devices
+;
+;*** Created 12/05/07  (linshaozhou)
+;
+
+
+
+[Version]
+Signature=$Windows NT$
+Class=HIDClass
+ClassGuid={745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Provider=%MyMfg%
+DriverVer=12/05/2007,1.0.0.1
+CatalogFile=H647906.cat
+
+[DestinationDirs]
+DefaultDestDir   = 12 ; DIRID_DRIVERS
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+; Manufacturer Section
+; ---------------------------------------------------------
+[Manufacturer]
+%MyMfg%=MyDevice,NTamd64
+
+[MyDevice.NTamd64]
+%MyDeviceDesc%=H647906_Inst, USB\VID_0810&PID_0001
+
+[H647906_Inst.NT]
+Include   = input.INF
+Needs     = HID_Inst.NT
+Copyfiles = H647906_CopyFiles.NT
+
+[H647906_CopyFiles.NT]
+H647906.sys
+
+[H647906_Inst.NT.HW]
+DelReg  = H647906_Inst.DelReg.NT.HW
+AddReg  = H647906_Inst.AddReg.NT.HW
+
+[H647906_Inst.DelReg.NT.HW]
+; remove the selective suspend enable flag in case it is present from a previous install
+HKR,,"SelectiveSuspendEnabled"
+
+[H647906_Inst.AddReg.NT.HW]
+HKR,,"LowerFilters",0x00010000,"H647906"
+
+
+[H647906_Inst.NT.Services]
+Needs      = HID_Inst.NT.Services
+AddService = H647906,,H647906_Service_Inst
+
+
+[H647906_Service_Inst]
+DisplayName    = 	%H647906.SvcDesc%
+ServiceType    = 	%SERVICE_KERNEL_DRIVER%
+StartType      =	%SERVICE_DEMAND_START%
+ErrorControl   =	%SERVICE_ERROR_NORMAL%
+ServiceBinary  =	%12%\H647906.sys
+LoadOrderGroup =	extended base
+
+
+; Source Media Section
+; ---------------------------------------------------------
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+H647906.sys = 1,,
+
+
+; Strings Section
+; ---------------------------------------------------------
+[strings]
+; localizable
+
+MyMfg            =	"Dragon Rise"
+MyDeviceDesc	 =	"HID-Compliant USB Game Controller"
+H647906.SvcDesc  =	"Dragon Rise H647906 NTamd64 Driver"
+DiskName         =	"Dragon Rise Game controller Installation Disk"
+
+; non-localizable
+SPSVCINST_TAGTOFRONT  = 0x00000001
+SPSVCINST_ASSOCSERVICE= 0x00000002
+SERVICE_KERNEL_DRIVER = 1
+SERVICE_BOOT_START    = 0
+SERVICE_SYSTEM_START  = 1
+SERVICE_AUTO_START    = 2
+SERVICE_DEMAND_START  = 3
+SERVICE_ERROR_NORMAL  = 1
+SERVICE_ERROR_IGNORE  = 0
+REG_EXPAND_SZ         = 0x00020000
+REG_DWORD             = 0x00010001
+REG_SZ                = 0x00000000
+
+
+
