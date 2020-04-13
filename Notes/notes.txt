@@ -1,0 +1,7 @@
+-> no html.
+
+01- <br/> (Break Row)
+02- &nbsp; (Non-breaking Space)
+03- <p></p> (Área de Parágrafo)
+04- <wbr/> (Word Breaker)
+05- &shy (Soft Hyphen)
