@@ -7,3 +7,8 @@
 05- &shy (Soft Hyphen)
 06- <figure></figure> (utilizar imagens e dar um significado semântico a elas)
 07- <figcaption></figcaption> (legenda de imagem)
+08- <nav></nav> (área de navegação [normalmente é onde estará as listas])
+09- <ol></ol> (Ordered lists)
+10- <ul></ul> (Unordered lists)
+11- <li></li> (List items)
+12- <a href="url do link"></a> (É uma âncora, uma base para a criação de um link)
