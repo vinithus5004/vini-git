@@ -1,12 +1,55 @@
 @charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face{
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
 
 body{
-	background-image: white;
+	background-color: #dddddd;
 	color: rgba(0,0,0,1);
 }
+
+div#interface{
+	background-color: #ffffff;
+	width: 1250px;
+	margin: -20px auto 0px auto;
+	padding: 10px 10px 10px 10px; /*como todos os valores são iguais, poderiamos colocar apenas 10px;*/
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+
 p{
 	text-align: justify;
 	text-indent: 40px;
+}
+
+/* Formatação dentro da tag header.*/
+
+header#cabecalho img#icone{
+	position: absolute;
+	left: 1130px;
+	top: 70px;
+}
+header#cabecalho{
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 95px;
+}
+header#cabecalho h1{
+	font-family: FonteLogo, sans-serif;
+	font-size: 35pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+header#cabecalho h2{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 16pt;
+	color: #888888;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 /* Formatação de imagens com legendas. */
@@ -34,4 +77,38 @@ figure.foto-legenda figcaption{
 }
 figure.foto-legenda:hover figcaption{
 	opacity: 1;
+}
+
+/* Formatação do Menu.*/
+
+nav#menu{
+	display: block;
+}
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 660px;
+}
+nav#menu li{
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 8px;
+	margin: 4px;
+	transition: background-color 1s;
+}
+nav#menu li:hover{
+	background-color: #606060;
+}
+nav#menu h1{
+	display: none;
+}
+nav#menu a{
+	color: #000000;
+	text-decoration: none;
+}
+nav#menu a:hover{
+	color: #ffffff;
+	text-decoration: underline;
 }
