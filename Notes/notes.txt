@@ -12,3 +12,6 @@
 10- <ul></ul> (Unordered lists)
 11- <li></li> (List items)
 12- <a href="url do link"></a> (É uma âncora, uma base para a criação de um link)
+13- <section></section> (Sessão)
+14- <aside></aside> (conteúdo lateral)
+15- <footer></footer> (rodapé)

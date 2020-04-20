@@ -112,3 +112,25 @@ nav#menu a:hover{
 	color: #ffffff;
 	text-decoration: underline;
 }
+
+/* Formatação da área section, aside e footer.*/
+
+section#corpo{
+	display: block;
+	width: 700px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 20px;
+}
+aside#lateral{
+	display: block;
+	width: 510px;
+	float: right;
+}
+footer#rodape{
+	clear: both;
+	border-top: 1px solid #606060;
+}
+footer#rodape p{
+	text-align: center;
+}
