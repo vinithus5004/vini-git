@@ -15,3 +15,32 @@
 13- <section></section> (Sessão)
 14- <aside></aside> (conteúdo lateral)
 15- <footer></footer> (rodapé)
+16- <table></table> (Dentro desta tag estará contida a nossa tabela.)
+17- <caption></caption> (Legenda)
+18- <tr></tr> (table rows)
+19- <td></td> (table data)
+20- <td rowspan""> (expansão de linha)
+21- <td colspan""> (preenchimento de coluna)
+22- <article></article> (Uma mesma section pode conter vários articles)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
