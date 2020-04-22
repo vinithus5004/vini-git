@@ -170,12 +170,14 @@ table#tabelaspec td{
 	padding: 12px;
 	text-align: center;
 	vertical-align: middle;
+	text-align: left;
 }
 table#tabelaspec td.ce{
 	color: #ffffff;
 	background-color: #606060;
 	vertical-align: top;
 	font-weight: bold;
+	text-align: right;
 }
 table#tabelaspec td.cd{
 	background-color: #cecece;
