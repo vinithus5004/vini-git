@@ -228,3 +228,19 @@ footer#rodape{
 footer#rodape p{
 	text-align: center;
 }
+
+/* Arquivos de Vídeo*/
+
+video#video01{
+	display: block;
+	position: relative;
+	left: 70px;
+	width: 550px;
+	padding: 5px;
+}
+video#video02{
+	display: block;
+	position: relative;
+	left: 33px;
+	width: 450px;
+}
