@@ -1,0 +1,23 @@
+Dicas/Atalhos no Excel
+
+01- ctrl + espaço (Seleciona todas as colunas)
+02- shift + espaço (Seleciona todas as linhas)
+03- [shift + espaço] + [ctrl+] (Adiciona uma nova linha acima da linha selecionada.)
+04- [shift + espaço] + [ctrl-] (Apaga a linha selecionada)
+05- Os atalhos acima também serve para coluna.
+06- ctrl + [seta pra cima] (Avança para a primeira linha)
+07- ctrl + [seta pra baixo] (Avança para a última linha)
+08- ctrl + [seta pra esqerda] (Avança para a primeira coluna)
+09- ctrl + [seta pra cima] (Avança para a última coluna)
+10- ctrl + home (Vai para a primeira célula)
+11- ctrl + * (Seleciona um bloco de dados)
+12- ctrl + 1 (Formatação das células selecionadas)
+13- ctrl + shit + [seta pra baixo] (seleciona todos os dados em direção à seta)
+14- shift + [qualquer das setas] (seleciona a próxima célula dependendo da orientação da seta)
+15- shift + [click no botão esquerdo do mouse] (seleciona um quadrilátero com origem na célula ativa e final na célula escolhida pelo cursor do mouse)
+16- [ctrl + t] ou [ctrl + *] (seleciona todo o bloco que contém dados de acordo com a célula ativa)
+17- [Posição da célula]:[Posição da célula] (Ex: A1:C8 ou A1:C8;J1:M10)  
+18- Para selecionar mais de um bloco de dados é só segurar o ctrl.
+19- [ctrl + x] (Recorta o bloco de dados selecionado)
+20- [ctrl + v] (Cola o bloco de dados, que foi recortado, no local desejado)
+21- [ctrl + c] (Copia o bloco de dados selecionado) 

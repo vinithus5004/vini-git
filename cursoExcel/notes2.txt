@@ -1,0 +1,4 @@
+Dicas/Atalhos no Excel [Parte 2]
+
+01- ctrl (Abre uma aba para formatação para o bloco selecionado)
+02- 
