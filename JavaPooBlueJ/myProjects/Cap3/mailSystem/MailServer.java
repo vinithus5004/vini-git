@@ -17,14 +17,37 @@ public class MailServer{
 		items = new ArrayList<MailItem>();
 	}
 	//Quantos itens de correio estão disponível para o destinatário.
-	public int howManyMailItems(String Who){
+	public int howManyMailItems(String who){
 		
 		int cont = 0;
-		Iterator<MailItem> it = items;
+		for(MailItem item : items){
+			if(item.getTo().equals(who)){
+				cont++;
+			}
+		}
+		return cont;
+	}
+	/* Retorna o próximo item de correio para certo destinatário. Caso não haja
+	   nenhum item para esse destinatário o retorno é nulo.
+	*/
+	public MailItem getNextMailItem(String who){
+		
+		Iterator<MailItem> it = items.iterator();
+		while(it.hasNext()){
+			MailItem item = it.next();
+			if(item.getTo().equals(who)){
+				it.remove();
+				return item;
+			}
+		}
+		return null;
+		
+	}
+	//Adiciona um novo item de correio na lista de mensagens.
+	public void post(MailItem item){
+		
+		items.add(item);
 	}
 	
 }
-
-
-
 
