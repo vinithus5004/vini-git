@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Responder()
+comment0.text=\r\n\ Constr\u00F3i\ uma\ respondente\r\n
+comment1.params=
+comment1.target=java.lang.String\ generateResponse()
+comment1.text=\r\n\ Generate\ a\ response.\r\n\ @return\ \ \ A\ string\ that\ should\ be\ displayed\ as\ the\ response\r\n
+comment2.params=
+comment2.target=void\ fillResponses()
+comment2.text=\r\n\ Constr\u00F3i\ uma\ lista\ de\ respostas\ padr\u00E3o\ da\ qual\ podemos\r\n\ selecionar\ uma\ se\ n\u00E3o\ soubermos\ mais\ o\ que\ dizer.\r\n
+numComments=3
